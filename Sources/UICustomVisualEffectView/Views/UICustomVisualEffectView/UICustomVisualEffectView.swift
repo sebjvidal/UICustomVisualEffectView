@@ -44,6 +44,14 @@ public class UICustomVisualEffectView: UIVisualEffectView {
         }
     }
     
+    public var tintColorAlpha: CGFloat? {
+        get {
+            return overlayView?.alpha
+        } set {
+            overlayView?.alpha = newValue ?? 1
+        }
+    }
+    
     public var saturation: CGFloat {
         get {
             return colorSaturate?.requestedValues[String(base64: "aW5wdXRBbW91bnQ=")] as? CGFloat ?? 0
