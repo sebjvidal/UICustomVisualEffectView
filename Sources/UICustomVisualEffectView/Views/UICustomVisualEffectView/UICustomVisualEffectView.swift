@@ -7,7 +7,7 @@
 
 import UIKit
 
-public class UICustomVisualEffectView: UIVisualEffectView {
+open class UICustomVisualEffectView: UIVisualEffectView {
     // MARK: - Private Properties
     private var colorSaturate: NSObject? {
         return backdropView?.filters.firstFilter(named: String(base64: "Y29sb3JTYXR1cmF0ZQ=="))
